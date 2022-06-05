@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfApp19.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp19"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="asd" AutoGenerateColumns="False" SnapsToDevicePixels="True" Margin="0,0,0,90">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="id" Binding="{Binding id}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Стоимость" Binding="{Binding Стоимость}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Бренд" Binding="{Binding Бренд}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Адрес" Binding="{Binding Адрес}" Width="*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Характеристики" Binding="{Binding Характеристики}" Width="*"></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="delete" Content="Удаление" HorizontalAlignment="Left" Margin="0,349,0,0" VerticalAlignment="Top" Height="40" Width="205" Click="delete_Click"/>
+        <Button x:Name="obnav" Content="Обновление " HorizontalAlignment="Left" Margin="220,349,0,0" VerticalAlignment="Top" Height="40" Width="195" Click="obnav_Click"/>
+        <Button x:Name="dobav" Content="Добавление" HorizontalAlignment="Left" Margin="420,349,0,0" VerticalAlignment="Top" Height="40" Width="235" Click="Button_Click"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="420,394,0,0" VerticalAlignment="Top" Width="235" Height="30" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
