@@ -21,22 +21,23 @@ namespace WpfApp19
     /// </summary>
     public partial class privet : Window
     {
+        
         DispatcherTimer timer = new DispatcherTimer();
         public privet()
         {
             InitializeComponent();
             timer.Interval = new TimeSpan(0, 0, 1);
-            timer.Tick += timer_Tick;
+            timer.Tick += gg;
 
         }
         int intrerv = 10;
-        void timer_Tick(object sender, EventArgs e)
+        void gg(object sender, EventArgs e)
         {
             intrerv--;
             if (intrerv == 0)
             {
 
-
+                
 
                 timer.Stop();
                 intrerv = 10;
